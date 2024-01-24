@@ -2,9 +2,7 @@ const links = document.querySelectorAll('.nav-link');
 
 links.forEach((link) => {
   link.addEventListener('click', async (event) => {
-    event.preventDefault();
-
-    alert('Link clicked!');
+    alert('Yendo al documento...');
 
     await new Promise((resolve) => setTimeout(resolve, 2000));
 
