@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Portfolio by Edson Pereira / 2021576</h1>
+    </header>
+
+    <main>
+      <section id="seccionPrimera">
+        <h2>Personal Info</h2>
+        <img src="Images/Foto_Personal.jpg" width="500" height="500" />
+        <p>
+          <b>
+            Hi! My name is Edson Pereira and this is a portfolio of some of the
+            things i've done. I'm currently doing a Bachelor's degree in
+            computer science in Kinal. Hopefully, i can continue my studies in a
+            university, preferably a Software Engineer's degree. I'm looking
+            forward to the trials that life can give me and to give my all every
+            day.
+          </b>
+        </p>
+      </section>
+
+      <section id="seccionDescargaProyectos">
+        <h2>Projects</h2>
+
+        <ul class="projects">
+          <li>
+            <h1>TonysKinal</h1>
+            <p>This program functions as a managing tool for a restaurant</p>
+            <a
+              href="Projects/TonysKinal2023_2021576.rar"
+              download="TonysKinal2023_2021576.rar"
+              class="boton-download"
+              >Download Program</a
+            >
+          </li>
+        </ul>
+
+        <ul class="projects">
+          <li>
+            <h2>Ventas</h2>
+            <p>
+              This program is intended to look and function as an online store
+            </p>
+            <a
+              href="Projects/Ventas2021576.rar"
+              download="Ventas2021576.rar"
+              class="boton-download"
+              >Download Program</a
+            >
+          </li>
+        </ul>
+      </section>
+
+      <section id="seccionPrimera">
+        <h2>Languages</h2>
+        <p>
+          Here is a list of the programming languages that I know how to use at
+          some degree, ones more than others.
+        </p>
+        <ul class="languages-list">
+          <li>
+            <h3>HTML/CSS</h3>
+            <p>
+              Markup languages fundamental for building web pages. CSS is used
+              to define the appearence of said web pages.
+            </p>
+          </li>
+          <li>
+            <h3>Java</h3>
+            <p>
+              Programming language focused on OOP (Object Oriented Programming).
+            </p>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <p>
+              Programming language used to define the behavior of a web page and
+              the elements contained inside it.
+            </p>
+          </li>
+          <li>
+            <h3>SQL</h3>
+            <p>
+              Language used to define the structure of a relational database.
+            </p>
+          </li>
+        </ul>
+      </section>
+
+      <div class="video-container">
+        <video src="Images/toothless.mp4" autoplay loop muted controls></video>
+        <div class="video-text">
+          <p>
+            This was the first video that popped up in my head, so I decided to
+            put it in here.
+          </p>
+        </div>
+      </div>
+      <section id="seccionPrimera">
+        <h2>Contact</h2>
+        <p>Input your data to communicate with me.</p>
+
+        <form action="javascript:void(0);" onsubmit="sendForm()">
+          <label for="name">Name:</label>
+          <input type="text" id="nombre" name="nombre" required />
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required />
+
+          <button id="buttonSend">Send Data</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>I don't really know what to write here to be honest...</footer>
+    <script>
+      function sendForm() {
+        document.getElementById('buttonSend').setAttribute('disabled', 'true');
+        document.querySelector('form').classList.add('cargando');
+        window.location.href = 'https://www.youtube.com/watch?v=dQw4w9WgXcQ';
+      }
+    </script>
+  </body>
+</html>
