@@ -17,8 +17,8 @@ body {
 
 header {
   text-align: center;
-  background-color: #0ed6b5;
-  color: #000000;
+  background-color: #020202;
+  color: #fff;
   padding: 5px;
   position: fixed;
   width: 100%;
@@ -51,7 +51,7 @@ main {
   bottom: 20px;
   right: 20px;
   z-index: 100;
-  background-color: #ff6347;
+  background-color: #d8d8c0;
   color: #fff;
   padding: 10px 20px;
   border-radius: 50%;
@@ -67,7 +67,7 @@ main {
   top: 50px;
   right: 20px;
   z-index: 100;
-  background-color: #ff6347;
+  background-color: #d8d8c0;
   color: #fff;
   padding: 10px 20px;
   border-radius: 50%;
@@ -219,5 +219,5 @@ button {
 }
 
 button:hover {
-  background-color: #0056b3;
+  background-color: #bfc0c0;
 }
