@@ -6,6 +6,7 @@ function navigateToLink(linkElement) {
     .split('.')[0];
 
   const message = `Nos vamos a ${filename}`;
+  alert(message);
   window.location.href = linkElement.getAttribute('href');
 }
 
