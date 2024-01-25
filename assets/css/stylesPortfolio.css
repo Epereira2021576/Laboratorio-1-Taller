@@ -1,3 +1,12 @@
+/* Colors i wanna use 
+bfc0c0
+ffffff
+020202
+735cdd
+020887
+d8d8c0
+*/
+
 body {
   font-family: Courier, sans-serif;
   margin: 0;
@@ -37,21 +46,40 @@ main {
   padding: 20px;
 }
 
-.boton-dowonload {
-  display: inline-block;
-  padding: 10px 20px;
-  background-color: #4caf50;
+.botonRegreso {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #ff6347;
   color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
   text-decoration: none;
-  border-radius: 5px;
-  font-size: 16px;
-  margin-top: 20px;
-  display: block;
-  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
-.boton-download:hover {
-  background-color: #45a049;
+.botonMute {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 100;
+  background-color: #ff6347;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 50%;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+
+.floating-button:hover {
+  background-color: #e65100;
 }
 
 section {
@@ -192,21 +220,4 @@ button {
 
 button:hover {
   background-color: #0056b3;
-}
-
-.video-container {
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.video-text {
-  position: absolute;
-  top: 50%;
-  right: 10%;
-  transform: translateY(-50%);
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
