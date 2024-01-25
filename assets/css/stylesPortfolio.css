@@ -64,7 +64,7 @@ main {
 
 .botonMute {
   position: fixed;
-  top: 20px;
+  top: 50px;
   right: 20px;
   z-index: 100;
   background-color: #ff6347;
