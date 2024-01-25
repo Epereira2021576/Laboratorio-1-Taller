@@ -11,6 +11,7 @@
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" href="/assets/css/stylesPortfolio.css" />
+    <script src="/assets/scripts/logicPortfolio.js"></script>
   </head>
   <body>
     <header>
@@ -20,12 +21,12 @@
       Return to Home
     </button>
 
-    <button class="botonMute">
+    <button id="botonMute" class="botonMute">
         <img id="imagenMute" src="/assets/resources/mute.png" alt="Mute">
-  <img id="imagenUnmute" src="/assets/resources/sound.png" alt="Unmute" style="display:none;">
-      <span id="textoMute"></span>
+        <img id="imagenUnmute" src="/assets/resources/sound.png" alt="Unmute" style="display:none;">
+      
     </button>
-    <audio id="musicaFondo" src="/assets/resources/lofi-musica.mp3" controls=false></audio>
+    <audio id="musicaFondo" src="/assets/resources/lofi-musica.mp3" autoplay loop></audio>
     <main>
       <section id="seccionPrimera">
         <h2>Personal Info</h2>
