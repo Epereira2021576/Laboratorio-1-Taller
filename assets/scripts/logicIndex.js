@@ -8,3 +8,11 @@ function navigateToLink(linkElement) {
   const message = `Nos vamos a ${filename}`;
   window.location.href = linkElement.getAttribute('href');
 }
+
+const parentElement = document.querySelector('nav');
+
+parentElement.addEventListener('click', function (event) {
+  if (event.target.tagName === 'A') {
+    navigateToLink(event.target);
+  }
+});
