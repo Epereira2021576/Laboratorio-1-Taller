@@ -1,29 +1,27 @@
-/* Colors i wanna use 
-bfc0c0
-ffffff
-020202
-735cdd
-020887
-d8d8c0
-*/
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-}
-
 header {
   background-image: url('../resources/KNL-FLY.webp');
   background-repeat: no-repeat;
   background-position: left center;
   background-size: cover;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   padding: 20px;
+}
+
+.logo {
   display: flex;
   align-items: center;
 }
 
+.logo img {
+  height: 50px;
+  width: auto;
+}
+
 nav {
-  margin-left: auto;
+  display: flex;
+  align-items: center;
 }
 
 nav ul {
@@ -31,16 +29,26 @@ nav ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-content: flex-start;
 }
 
 nav a {
   text-decoration: none;
-  background-color: #d8d8c0;
   color: #333;
-  margin-right: 10px;
-  padding: 5px;
+  padding: 15px 20px;
   position: relative;
+}
+
+nav a:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: #f1f1f1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.3s ease;
 }
 
 nav a:hover:before {
@@ -65,4 +73,53 @@ section:nth-child(2) {
 
 h2 {
   margin-bottom: 10px;
+}
+
+/* Colors i wanna use 
+bfc0c0
+ffffff
+020202
+735cdd
+020887
+d8d8c0
+*/
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #bfc0c0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: #020887;
+}
+
+a {
+  color: #735cdd;
+}
+
+a:hover {
+  color: #020887;
+}
+
+button,
+input[type='submit'],
+input[type='button'] {
+  background-color: #735cdd;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+input[type='submit']:hover,
+input[type='button']:hover {
+  background-color: #020887;
 }
