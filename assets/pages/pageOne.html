@@ -10,6 +10,7 @@
     <title>Portfolio</title>
     <meta name="description" content="" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/assets/resources/fairytail.png" />
     <link rel="stylesheet" href="/assets/css/stylesPortfolio.css" />
     <script src="/assets/scripts/logicPortfolio.js"></script>
   </head>
@@ -54,6 +55,7 @@
             </p>
             <img src="/assets/resources/Imagen tonys kinal 1.png" width="700" height="500" alt="Tonys kinal">
             <p>Acá esta otra imagen, pero de parte del programa corriendo.</p>
+            <img src="/assets/resources/Running-tonys.png" width="700" height="500" alt="Tonys kinal ejecutado">
           </li>
         </ul>
 
@@ -107,14 +109,14 @@
         <h2>Contact</h2>
         <p>Input your data to communicate with me.</p>
 
-        <form action="javascript:void(0);" onsubmit="sendForm()">
+        <form id="formularioContacto">
           <label for="name">Name:</label>
           <input type="text" id="nombre" name="nombre" required />
 
           <label for="email">Email:</label>
           <input type="email" id="email" name="email" required />
 
-          <button id="buttonSend">Send Data</button>
+          <button type="submit">Send Data</button>
         </form>
       </section>
     </main>
