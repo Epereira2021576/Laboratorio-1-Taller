@@ -1,0 +1,61 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+  padding: 10px;
+}
+/*Esta seccion de estilos define la apariencia del header y el navbar contenido en si*/
+header {
+  grid-column: 1 / -1;
+  background-color: lightgray;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.logo {
+  grid-column: 1 / 3;
+  align-self: center;
+}
+
+nav {
+  grid-column: 9 / -1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav a {
+  margin: 0 10px;
+}
+/*FIN*/
+
+/*Estos estilos definen la apariencia y estructuras de las secciones*/
+.section {
+  grid-column: 1 / -1;
+  background-color: lightblue;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.section:nth-child(even) {
+  background-color: lightgreen;
+}
+
+.section h2 {
+  margin: 0;
+}
+
+.section p {
+  margin: 0;
+}
+/*FIN*/
