@@ -19,11 +19,10 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-const formulario = document.getElementById('formularioContacto');
-formulario.addEventListener('submit', (event) => {
-  event.preventDefault();
-  const nombre = document.getElementById('nombre').value;
-  const email = document.getElementById('email').value;
-  const mensaje = `Hello ${nombre}, i'll get to you shortly, dont forget to check your mail address ${email}`;
-  alert(mensaje);
-});
+function mensajeAlerta() {
+  let nombre = document.getElementById('nombreForm').value;
+  let correo = document.getElementById('emailForm').value;
+  alert(
+    `Hola ${nombre}\nMe estaré comunicando contigo lo más pronto posible\nNo te olvides de revisar tu correo ${correo}`
+  );
+}
