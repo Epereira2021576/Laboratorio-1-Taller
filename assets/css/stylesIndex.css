@@ -1,0 +1,89 @@
+/* Colors i wanna use 
+bfc0c0
+ffffff
+020202
+735cdd
+020887
+d8d8c0
+*/
+
+/*Estilos para la parte superior e inferior de la pagina*/
+header {
+  background-color: #020887;
+  color: #ffffff;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: #020887;
+  color: #ffffff;
+  padding: 10px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 35px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+/*FIN*/
+
+/*Estilo para los elementos de la barra de navegacion*/
+main {
+  width: 70%;
+  margin: 60px auto 0;
+}
+nav {
+  background-color: #020202;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 60px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ccc;
+}
+/*FIN*/
+
+body {
+  background-color: #d8d8c0;
+}
+#seccionGustos {
+  background-color: #020887;
+  color: #bfc0c0;
+  padding: 10px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 35px;
+  font-family: 'Times New Roman', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#divGustos {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+#parrafoGustos {
+  text-align: center;
+  font-size: 20px;
+  font-family: 'Arial', Tahoma, Geneva, Verdana, sans-serif;
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Portfolio</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/png" href="/assets/resources/fairytail.png" />
+    <link rel="stylesheet" href="/assets/css/stylesPortfolio.css" />
+    <script src="/assets/scripts/logicPortfolio.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Personal Portfolio</h1>
+    </header>
+    <button class="botonRegreso" onclick="location.href='/index.html'">
+      Return to Home
+    </button>
+
+    <button id="botonMute" class="botonMute">
+        <img id="imagenMute" src="/assets/resources/mute.png" alt="Mute">
+        <img id="imagenUnmute" src="/assets/resources/sound.png" alt="Unmute" style="display:none;">
+      
+    </button>
+    <audio id="musicaFondo" src="/assets/resources/lofi-musica.mp3" autoplay loop></audio>
+    <main>
+      <section id="seccionPrimera">
+        <h2>Personal Info</h2>
+        <img src="/assets/resources/Foto_Personal.jpg" width="500" height="500" />
+        <p>
+          <b>
+            ¡Hola! Mi nombre es Edson Pereira y este es un portafolio de algunas cosas que he hecho. Actualmente estoy cursando una Licenciatura en
+            Informática en Kinal. Ojalá pueda continuar mis estudios en una universidad, preferiblemente en la carrera de Ingeniero en Sistemas. 
+            Espero con ansias los retos que la vida me lance día a día. Espero que el contenido de esta página sea de su agrado. Tomense su tiempo y disfruten.
+          </b>
+        </p>
+      </section>
+
+      <section id="seccionDescargaProyectos">
+        <h2>Proyectos que he hecho</h2>
+
+        <ul class="projects">
+          <li>
+            <h1>TonysKinal</h1>
+            <p>Este programa funciona como una heramienta de manejo de aspectos sobre un restaurante ficticio. 
+                Tiene todas las funcionalidades que podría necesitar alguien de inventario a la a vez de contar con un listado de los empleados actuales 
+                y el rol que ocupan, ya sea mesero, sous chef, encargado de las salsas, etc. 
+                Fue uno de los proyectos más ambiciosos que tuve el año pasado, y siento que tengo una relación de amor-odio, pues, las veces que me arranqué los pelos para poder hacer que algo funcionara 
+                valieron la pena porque la verdad se mira bonito para los estándares de un alumno con mediana experiencia en programación. A continuación una imagen de parte del código:
+            </p>
+            <img src="/assets/resources/Imagen tonys kinal 1.png" width="700" height="500" alt="Tonys kinal">
+            <p>Acá esta otra imagen, pero de parte del programa corriendo.</p>
+            <img src="/assets/resources/Running-tonys.png" width="700" height="500" alt="Tonys kinal ejecutado">
+          </li>
+        </ul>
+
+        <ul class="projects">
+          <li>
+            <h2>Ventas</h2>
+            <p>
+              Este programa tiene la intención de verse y funcionar como una tienda online, similar a amazon y otras.
+              Tiene la capacidad de registrar usuarios, productos y ventas, además de tener la capacidad de generar un carrito de ventas como en un supermercado.
+              Esa era la visión que se tenia para el desarrollo de este proyecto, pero fallé en implementar de manera correcta la funcionalidad del carrito de compras.
+              De igual manera, la página satisfactoriamente logra guardar elementos a una base de datos. Sinceramente me gusta como me quedó.
+            </p>
+            <img src="../resources/imagen ventas 1.png" width="700" height="500" alt="Ventas">
+            <p>Acá esta otra imagen, pero de parte del programa corriendo.</p>
+            <img src="../resources/running-ventas.png" width="700" height="500" alt="Ventas ejecutado">
+          </li>
+        </ul>
+      </section>
+
+      <section id="seccionPrimera">
+        <h2>Lenguajes</h2>
+        <p>
+          Esta es una lista de los lenguajes de programacion que conozco, unos más que otros.
+        </p>
+        <ul class="languages-list">
+          <li>
+            <h3>HTML/CSS</h3>
+            <p>
+              Los lenguajes de etiquetas son escenciales para la construcción de págians web y, junto con CSS, dan una apariencia agradable y concisa a estas.
+            </p>
+          </li>
+          <li>
+            <h3>Java</h3>
+            <p>
+              Este es un lenguaje de programación centrado en POO (Programación Orientada a Objetos).
+            </p>
+          </li>
+          <li>
+            <h3>JavaScript</h3>
+            <p>
+              Este es un lenguaje de programación utilizado para definir el comportamiento de una página web y los elementos contenidos en ella.
+            </p>
+          </li>
+          <li>
+            <h3>SQL</h3>
+            <p>
+              Lenguaje utilizado para definir la estructura de una base de datos relacional.
+            </p>
+          </li>
+        </ul>
+      </section>
+      </div>
+      <section id="seccionPrimera">
+        <h2>Contacto</h2>
+        <p>Ingresa tus datos para comunicarte conmigo.</p>
+
+        <form class="" action="">
+          <input type="text" id="nombreForm" class="form-control" placeholder="Ingresa tu nombre...">
+          <input type="email" id="emailForm" class="form-control" placeholder="Ingresa tu correo...">
+          <button type="submit" onclick="mensajeAlerta()">Mandar</button>
+        </form>
+      </section>
+    </main>
+
+    <footer>No tengo idea de si debe de haber algo aqui...</footer>
+    
+  </body>
+</html>
