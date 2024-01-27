@@ -1,3 +1,11 @@
+/* Lista de colores provisional 
+bfc0c0
+ffffff
+020202
+735cdd
+020887
+d8d8c0
+*/
 header {
   background-image: url('../resources/KNL-FLY.webp');
   background-repeat: no-repeat;
@@ -33,26 +41,32 @@ nav ul {
 
 nav a {
   text-decoration: none;
-  color: #333;
+  color: #ffffff;
   padding: 15px 20px;
   position: relative;
+  background-color: rgba(255, 255, 255, 0.5);
+  transition: background-color 0.3s ease;
 }
 
 nav a:before {
   content: '';
   display: block;
-  width: 100%;
+  width: 0;
   height: 100%;
   background-color: #f1f1f1;
   position: absolute;
   top: 0;
   left: 0;
   opacity: 0;
-  transition: opacity 0.3s ease;
+  transition: width 0.3s ease;
+}
+nav a:hover {
+  color: #bfc0c0;
+  background-color: rgba(2, 8, 135, 0.5);
 }
 
 nav a:hover:before {
-  opacity: 1;
+  width: 100%;
 }
 
 main {
@@ -75,14 +89,69 @@ h2 {
   margin-bottom: 10px;
 }
 
-/* Colors i wanna use 
-bfc0c0
-ffffff
-020202
-735cdd
-020887
-d8d8c0
-*/
+.section-1 {
+  background-color: #d8d8c0;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-1 h2 {
+  color: #020887;
+  margin-bottom: 10px;
+}
+
+.dropdown-menu {
+  display: none;
+}
+
+.section-1:hover .dropdown-menu {
+  display: block;
+}
+
+.section-2 {
+  background-color: #735cdd;
+  color: #ffffff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-2 h2 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.section-3 {
+  display: flex;
+  justify-content: space-around;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.section-3 h2 {
+  color: #020887;
+  margin-bottom: 10px;
+}
+
+.card {
+  background-color: #ffffff;
+  color: #020887;
+  padding: 20px;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+}
+
+.card img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.card h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
