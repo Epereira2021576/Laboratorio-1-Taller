@@ -93,6 +93,7 @@ h2 {
   background-color: #d8d8c0;
   padding: 20px;
   box-sizing: border-box;
+  text-align: center;
 }
 
 .section-1 h2 {
@@ -100,19 +101,13 @@ h2 {
   margin-bottom: 10px;
 }
 
-.dropdown-menu {
-  display: none;
-}
-
-.section-1:hover .dropdown-menu {
-  display: block;
-}
-
 .section-2 {
-  background-color: #735cdd;
+  background-color: #bfc0c0;
   color: #ffffff;
   padding: 20px;
   box-sizing: border-box;
+  height: auto;
+  border: 5px solid #000000;
 }
 
 .section-2 h2 {
@@ -129,7 +124,7 @@ h2 {
 
 .section-3 h2 {
   color: #020887;
-  margin-bottom: 10px;
+  margin-bottom: 50px;
 }
 
 .card {
@@ -191,4 +186,80 @@ button:hover,
 input[type='submit']:hover,
 input[type='button']:hover {
   background-color: #020887;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-btn {
+  background-color: #34568b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown-submenu {
+  display: none;
+  position: relative;
+}
+
+.dropdown-submenu .dropdown-submenu-btn {
+  background-color: #34568b;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.dropdown-submenu-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-submenu-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-submenu-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-submenu:hover .dropdown-submenu-content {
+  display: block;
 }
