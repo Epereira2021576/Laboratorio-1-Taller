@@ -1,101 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../css/stylesKinal.css" />
-    <title>My Website</title>
-  </head>
-  <body>
-    <header>
-      <div class="logo">
-        <img class="logo" src="../resources/logoKinalNoFondo.png" />
-      </div>
 
-      <nav>
-        <ul>
-          <li><a href="/index.html">Inicio</a></li>
-          <li><a href="#section2">Cursos</a></li>
-          <li><a href="#section3">Login</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section class="section-1">
-        <ul class="dropdown-menu">
-          <li>
-            <a href="#">Submenu 1</a>
-            <ul class="sub-sub-menu">
-              <li><a href="#">Sub-submenu 1</a></li>
-              <li><a href="#">Sub-submenu 2</a></li>
-              <li><a href="#">Sub-submenu 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Submenu 2</a>
-            <ul class="sub-sub-menu">
-              <li><a href="#">Sub-submenu 1</a></li>
-              <li><a href="#">Sub-submenu 2</a></li>
-              <li><a href="#">Sub-submenu 3</a></li>
-            </ul>
-          </li>
-          <li>
-            <a href="#">Submenu 3</a>
-            <ul class="sub-sub-menu">
-              <li><a href="#">Sub-submenu 1</a></li>
-              <li><a href="#">Sub-submenu 2</a></li>
-              <li><a href="#">Sub-submenu 3</a></li>
-            </ul>
-          </li>
-        </ul>
-      </section>
-      <section class="section-2">
-        <h2>Como quisiera que se viera la página de Kinal</h2>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../css/stylesKinal.css" />
+  <script src="../scripts/logicKinal.js"></script>
+  <title>My Website</title>
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img class="logo" src="../resources/logoKinalNoFondo.png" />
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="/index.html">Inicio</a></li>
+        <li><a href="#" onclick="mensajePlaceholder()">Cursos</a></li>
+        <li><a href="#" onclick="mensajePlaceholder()">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="section-1">
+      <div class="dropdown">
+        <button class="dropdown-btn">Cursos</button>
+        <div class="dropdown-content">
+          <div class="dropdown-submenu">
+            <button class="dropdown-submenu-btn">Curso 1</button>
+            <div class="dropdown-submenu-content">
+              <a href="#">Sub-submenu 1.1</a>
+              <a href="#">Sub-submenu 1.2</a>
+              <a href="#">Sub-submenu 1.3</a>
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <button class="dropdown-submenu-btn">Curso 2</button>
+            <div class="dropdown-submenu-content">
+              <a href="#">Sub-submenu 2.1</a>
+              <a href="#">Sub-submenu 2.2</a>
+              <a href="#">Sub-submenu 2.3</a>
+            </div>
+          </div>
+          <div class="dropdown-submenu">
+            <button class="dropdown-submenu-btn">Curso 3</button>
+            <div class="dropdown-submenu-content">
+              <a href="#">Sub-submenu 3.1</a>
+              <a href="#">Sub-submenu 3.2</a>
+              <a href="#">Sub-submenu 3.3</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section-2">
+      <h2>¿Cómo quisiera que se viera la página de Kinal?(Opcional)</h2>
+      <p>
+        He hecho un rediseño de la página del colegio con la idea de tener un enfoque más comodo y accesible para
+        ciertas funciones que con la página actual se sienten muy recluidas. El diseño puede no estar lo mejor pulido
+        pero es bueno para demostrar una idea general de aspectos para mejorar en el portal escolar. Primeramente,
+        estaría bien que se hiciera a notar una barra de navegación en la parte superior de la pantalla, esto con el fin
+        de tener una experiencia de navegación más limpia y cómoda. Tenemos 2 secciones a los lados de este parrafo.
+        Primeramente, tenemos la que seria la seccion de cursos o clases, en ndonde actualmente se encuentra una
+        pirámide de elementos en donde se destacan los cursos por su código, lo cual es funcional para los profesores
+        pero el sistema de codigo de curso no solo es confuso para el alumno sino que siento que es contraproducente
+        tenerlo en esta posicion ya que no da a lugar una experiencia más limpia con respecto a la busqueda de las
+        asignaturas. La propuesta con la que vengo ahoa es tener una especia de dropdown similar pero no igual al
+        presente en esta seccion para poder tener más eficiencia encontrando los cursos y elementos necesarios de estos.
+        Esto está enfocado a los alumnos, pero los docentes tambien se verían beneficiados. Finalmente, tenemos la
+        seccion a la derecha, donde se destacan un calendario, una lista de usuarios conectados y una bandeja de
+        notificaciones. Tomé como inspiración el diseño actual del calendario de la página de Kinal que siento que si
+        esta bien pensado. Tengo támbien la lista de usuarios conectados donde se mostrarían alumnos y docentes por
+        igual. Esto se hace con el fin de conectar al que enseña con el que aprende. Támbien siento que un cambio
+        similar a este le sentaría bien a la función actual del correo en la plataforma la cual, exceptuando ciertos
+        casos puntuales con ciertos profesores, queda completamente obsoleta por otras opciones más convenientes como
+        Teams o Outlook. Por ultimo tenemos a la bandeja de notificaciones, de la cuál no hay mucho que comentar más que
+        el hecho de tener una bandeja de notificaciones amplia ayudaría a dimensionar las cosas por hacer que tiene el
+        alumno y funcionaría bastante mejor en conjunto con el calendario. Este sería mi análisis completo del porque el
+        tomar ciertaas pautas de diseño de esta página daría a una mejor experiencia del usuario en el portal virtual de
+        Kinal.
+      </p>
+    </section>
+    <section class="section-3">
+      <div class="card">
+        <img src="..//resources/calendario.png" width="48" height="48" alt="Calendario" />
+        <h3>Calendario</h3>
         <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-          risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec,
-          ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula
-          eros, blandit nec, pharetra at, semper at, magna. Nullam ac lacus.
-          Nulla facilisi. Praesent viverra justo vitae neque. Praesent blandit
-          adipiscing velit. Suspendisse potenti. Donec mattis, pede vel pharetra
-          blandit, magna ligula faucibus eros, id euismod lacus dolor eget odio.
-          Nam scelerisque. Donec non libero sed nulla mattis commodo. Ut
-          sagittis. Donec nisi lectus, feugiat porttitor, tempor ac, tempor
-          vitae, pede. Aenean vehicula velit eu tellus interdum rutrum. Maecenas
-          commodo. Pellentesque nec elit. Fusce in lacus. Vivamus a libero vitae
-          lectus hendrerit hendrerit.
+          *Inserte un calendario aqui*
         </p>
-      </section>
-      <section class="section-3">
-        <h2>Section 3</h2>
-        <div class="card">
-          <img src="card-image.jpg" alt="Card Image" />
-          <h3>Calendario</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor.
-          </p>
-        </div>
-        <div class="card">
-          <img src="card-image.jpg" alt="Card Image" />
-          <h3>Usuarios Conectados</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor.
-          </p>
-        </div>
-        <div class="card">
-          <img src="card-image.jpg" alt="Card Image" />
-          <h3>Card Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non
-            risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing
-            nec, ultricies sed, dolor.
-          </p>
-        </div>
-      </section>
-    </main>
-  </body>
+      </div>
+      <div class="card">
+        <img src="../resources/usuarios.png" width="48" height="48" alt="Usuarios" />
+        <h3>Usuarios Conectados</h3>
+        <ul>
+          <li>Usuario 1</li>
+          <li>Usuario 2</li>
+          <li>Usuario 3</li>
+          <li>Usuario 4</li>
+          <li>Usuario 5</li>
+          <li>Usuario 6</li>
+          <li>Usuario 7</li>
+          <li>Usuario 8</li>
+          <li>Usuario 9</li>
+          <li>Usuario 10</li>
+      </div>
+      <div class="card">
+        <img src="../resources/alarma.png" width="48" height="48" alt="Notificaciones" />
+        <h3>Notificaciones</h3>
+        <ul>
+          <li>Notificacion 1</li>
+          <li>Notificacion 2</li>
+          <li>Notificacion 3</li>
+          <li>Notificacion 4</li>
+          <li>Notificacion 5</li>
+          <li>Notificacion 6</li>
+          <li>Notificacion 7</li>
+          <li>Notificacion 8</li>
+          <li>Notificacion 9</li>
+          <li>Notificacion 10</li>
+      </div>
+    </section>
+  </main>
+</body>
+
 </html>
